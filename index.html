@@ -2,6 +2,7 @@
 <html lang="ko">
 <head>
 <meta charset="UTF-8">
+<script src="https://ttokjaetv.github.io/member-lock.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>손실 복구 계산기 · 똑재TV</title>
 <meta name="description" content="−30% 손실을 메우려면 몇 % 올라야 할까? 본전까지 필요한 상승률과 회복 기간, 매달 적립할 때의 회복 시점을 한 번에 계산합니다.">
@@ -518,8 +519,8 @@
     <h3 class="chart-title">얼마나 떨어지면, 얼마나 올라야 하고, 몇 년 걸릴까?</h3>
     <p class="chart-subtitle" id="table-subtitle">-</p>
     <div class="dl-bar">
-      <button type="button" class="dl-btn" id="dl-csv">CSV 내려받기</button>
-      <button type="button" class="dl-btn" id="dl-xlsx">엑셀(.xlsx) 내려받기</button>
+      <button type="button" class="dl-btn" id="dl-csv" data-member-click="엑셀 내려받기">CSV 내려받기</button>
+      <button type="button" class="dl-btn" id="dl-xlsx" data-member-click="엑셀 내려받기">엑셀(.xlsx) 내려받기</button>
       <span class="dl-note">엑셀에는 손실률별 표와 지금 입력값의 월별 회복 경로(원 단위)가 함께 들어갑니다</span>
     </div>
     <div class="table-wrap">
