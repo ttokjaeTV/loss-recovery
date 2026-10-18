@@ -732,7 +732,8 @@ function readInputs() {
   const c = Math.max(0, num('monthly', 0)) * 10000;
   if (MODE === 'rate') {
     const L = Math.max(0, Math.min(99, num('loss', 0))) / 100;
-    const P = Math.max(1, num('principal', 10000)) * 10000;
+    const pIn = num('principal', 0);
+    const P = (pIn > 0 ? pIn : 10000) * 10000;   // 비었거나 0 이하면 화면 표시('1억원(기본)')와 같은 1억원으로 계산
     return { mode: 'rate', L, P, V0: P * (1 - L), R, c, principalIn: num('principal', 10000) };
   }
   const P = Math.max(0, num('buy', 0)) * 10000;
